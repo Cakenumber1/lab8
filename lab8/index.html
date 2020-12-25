@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <title>Lab8</title>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="user">
+                <div class="user__content">
+                    <div class="user__name">
+                        Магазин на диване
+                    </div>
+                    <div class="user__prof">Лучший магазин</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <a class="nav__link" href="#">Акции &amp; лучшие предложения</a>
+                <a class="nav__link" href="#">Товары</a>
+                <a class="nav__link" href="#">Обратная связь</a>
+                <a class="nav__link" href="map.html">Карта</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Intro -->
+<section class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <div class="intro__content">
+                <h2 class="intro__subtitle">Крест Доминика Торетто</h2>
+                <h1 class="intro__title"> <s>10000$</s><br>9.99$</h1>
+                <div class="intro__subtext">Оригинал</div>
+            </div>
+            <div class="intro__picture">
+               <img src="images/krest.png" alt="1" width = 800 height = 800> 
+            </div>
+        </div>
+    </div>
+</section>
+<a class="topbutton" href="#">ВВерх</a>
+ <script>
+     var az = document.getElementsByClassName("topbutton")[0]
+
+    window.addEventListener('scroll', function() {
+      if (pageYOffset > 200){
+         az.style.visibility = "visible";
+      }
+      else{
+          az.style.visibility = "hidden";
+      }
+    });
+  </script>
+
+
+<!-- ListOf -->
+<section class="listof">
+    <div class="container">
+        <div class="listof__inner">
+            <h1 class="title">Популярные товары</h1>
+            <div class="subtext">Продаж: 999999999988 </div>
+            <div class="subtext">НЕ УПУСТИ ВОЗМОЖНОСТЬ СТАТЬ 1000000000000 клиентом </div>
+            <div class="text">
+                <ul type="disc">
+                    <li>
+                        <a class="link" href="#">Крест Доминика Торетто</a>
+                    </li>
+                    <li>
+                        <a class="link" href="argo.html">Золотая цепь Арго</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">Автоматиеский тренажер для...</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">Колеса Молнии Маквина</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">Многоразовая одноразовая маска</a>
+                    </li>
+                </ul>
+            </div>
+            <h1 class="secondtitle">Непопулярные товары</h1>
+               <div class="text">
+                <ul type="disk">
+                    <li>
+                        <a class="link" href="#">Неавтоматический тренажер для...</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">Одноразовая маска</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">Барсучий жир</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">Шапочка из фольги</a>
+                    </li>
+                </ul>
+               </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Music -->
+<section class="music">
+    <div class="container">
+        <div class="music__inner">
+            <h1 class="title">Музыка</h1>
+               <center>
+                   <div class="music__song">
+                   <div class="text">Автоплей не работает</div>
+                    <audio autoplay="autoplay" class="music__song" src="music/Xcho.mp3" controls preload="metadata"></audio>
+                   </div>
+               </center>
+        </div>
+    </div>
+</section>
+<section class = "chat">
+   <div class = container>
+      <div class ="chat__inner">
+       <h1 class="title">Обратная связь</h1>
+       <div class="text">Кратко оцените работу</div>
+        <input type="text" id="txt" name ="txt">
+        <button id="accept">Отправить</button>
+        </div>
+   </div>
+</section>
+    <div class = "container">
+        <button id="footer__button">Контакты</button> 
+    </div>
+
+<!-- Footer -->
+<footer class = "footer">
+    <div class="container">
+        <div class = "footer__inner">
+            <nav class="footer_nav">
+                            <a class="footer__link" href="https://vk.com/cakenumber1">
+                            <img src="images/vk.png"  width="45", height="45" alt="">
+                            </a>
+                            <a class="footer__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">
+                            <img src="images/youtube_social_circle_red.png" width="47", height="47" alt="">
+                            </a>
+                            <a class="footer__link" href="https://github.com/Cakenumber1">
+                            <img src="images/GitHub-Mark-Light-120px-plus.png" width="45", height="45" alt="">
+                            </a>
+             </nav>
+              <a class="nav__link" href="map.html">Карта</a>
+             <span class="footer__close">&times;</span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

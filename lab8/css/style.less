@@ -1,0 +1,62 @@
+// compress: true
+
+@import "vars";
+@import "text";
+
+html {
+   font-size: 15px;
+}
+.top{
+    position: fixed
+}
+
+body {
+    padding-top: 1rem;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: @black;
+    color: @gray-light;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.topbutton {
+    width:100px;
+    border:2px solid #ccc;
+    background-color:Red;
+    text-align:center;
+    padding:10px;
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    cursor:pointer;
+    color:#333;
+    font-family:verdana;
+    font-size:12px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    visibility: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+/* Block */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/user";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/social";
+@import "blocks/story";
+@import "blocks/listof";
+@import "blocks/music";
+@import "blocks/footer";
+@import "blocks/chat";

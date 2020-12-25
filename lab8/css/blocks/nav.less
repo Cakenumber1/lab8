@@ -1,0 +1,26 @@
+// main: ../style.less
+
+.nav {
+    display: flex;
+    height: 100%;
+    @media (max-width: 800px){
+        display: none;
+    }
+}
+
+.nav__link {
+    padding: 0.66rem 2rem;
+    font-size: 0.93rem;
+    color: @gray-light;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+
+    border: 2px solid transparent;
+    border-radius: 15px;
+
+    &:hover,
+    &.active {
+        border-color: #8D8D8E;
+    }
+}
